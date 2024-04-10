@@ -13,7 +13,7 @@ def total_convergence(f, t0, y0, t, delta_t, N, method, exact):
         e2 = abs(n2-y)
         q = e1/e2
         p = math.log2(q)
-        entries.append([i, h, e1, q, p])
+        entries.append([2**i, h, e1, p])
     return entries
 
 def estimated_convergence(f, t0, y0, t, delta_t, N, method):
@@ -27,5 +27,5 @@ def estimated_convergence(f, t0, y0, t, delta_t, N, method):
         e2 = abs(n1-n2)
         q = e1/e2
         p = math.log2(q)
-        entries.append([i, h, e1, q, p])
+        entries.append([2**i, h, e1, p])
     return entries
