@@ -33,7 +33,7 @@ def tangent_plane_with_concavity(function, grid_start, grid_end, interval, conca
     q = ax.quiver(X, Y, U/Norm, V/Norm, Conc, cmap=cmap)
     ax.quiverkey(q, X=0.3, Y=1.1, U=10, label='Quiver key, length = 10', labelpos='E')
 
-    ax.set_xlabel('t')
+    ax.set_xlabel('x')
     ax.set_ylabel('y')
     ax.set_title('Plano tangente com concavidade')
 
